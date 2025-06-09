@@ -1,0 +1,25 @@
+python3 platforms/osx/build_framework.py ./build_out \
+    --macos_archs "x86_64,arm64" \
+    --framework_name opencv2 \
+    --dynamic True \
+    --without dnn \
+    --without ts \
+    --without python \
+    --without java \
+    --without objc \
+    --without ml \
+    --without video \
+    --without stitching \
+    --without videoio \
+    --disable AVIF \
+    --disable OPENCL \
+    --disable LAPACK \
+    --disable EIGEN \
+    --disable PROTOBUF \
+    --disable OPENEXR \
+    --disable VTK \
+    --disable FFMPEG \
+    --disable GSTREAMER \
+    --disable JASPER \
+    --disable-swift \
+    --disable openmp
